@@ -37,7 +37,11 @@ export default function Home() {
             aria-hidden="true"
             className="w-full h-full object-cover opacity-60 pointer-events-none"
           >
-            <source src="/videos/intro2.mp4" type="video/mp4" />
+            <source
+              width="720"
+              src="https://res.cloudinary.com/dpzuexs49/video/upload/v1753213392/intro2_1_eacnbz.mp4"
+              type="video/mp4"
+            />
             Your browser does not support the video tag.
           </video>
         </div>
