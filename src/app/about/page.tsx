@@ -1,9 +1,7 @@
-'use client';
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-     import { FaHandsHelping, FaStar, FaUserCog } from "react-icons/fa"; // Add this at top
+import { FaHandsHelping, FaStar, FaUserCog } from "react-icons/fa";
 
 
 export default function Page() {
@@ -78,7 +76,7 @@ export default function Page() {
 
               <div className="w-full flex justify-center lg:justify-center mt-6">
                 <Link href="/about">
-                  <button className="px-6 py-3 bg-[#FCBA06] hover:bg-[#761768] transition-all duration-300 ease-in-out rounded-lg shadow-md">
+                  <button className="px-6 py-3 bg-[#FCBA06] hover:bg-[#FCBA06] transition-all duration-300 ease-in-out rounded-lg shadow-md">
                     <span className="text-white text-sm sm:text-base font-medium">ContactUs</span>
                   </button>
                 </Link>
@@ -89,80 +87,80 @@ export default function Page() {
       </section>
 
 
-{/* CORE PILLARS SECTION */}
-<div
-  className="w-full py-16 px-6 md:px-12 lg:px-20 bg-cover bg-center relative"
-  style={{ backgroundImage: "url('/images/intro-poster.jpg')" }} // Replace with your image
->
-  {/* Dark overlay */}
-  <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
+      {/* CORE PILLARS SECTION */}
+      <div
+        className="w-full py-16 px-6 md:px-12 lg:px-20 bg-cover bg-center relative"
+        style={{ backgroundImage: "url('/images/intro-poster.jpg')" }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
 
-  <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center gap-12">
-    {/* Left Section with Image and Pillars Text */}
-    <div className="w-full lg:w-[400px] flex justify-center items-center relative">
-      <div className="relative w-full max-w-lg">
-        <img
-          src="/images/about_2.jpg"
-          alt="Careers"
-          className="rounded-lg shadow-xl w-full h-auto object-cover"
-        />
-        <div
-          className="absolute bottom-[-30px] left-5 right-5 bg-white text-[#FCBA06] shadow-lg rounded-lg py-4 px-6 max-w-md mx-auto text-center"
-          style={{ zIndex: 10 }}
-        >
-          <p className="font-bold text-lg md:text-xl">Our Core Pillars</p>
-          <p className="text-sm md:text-base text-black">
-            We offer a dynamic and inclusive work environment that fosters
-            growth, creativity, and innovation.
-          </p>
+        <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center gap-12">
+          {/* Left Section with Image and Pillars Text */}
+          <div className="w-full lg:w-[400px] flex justify-center items-center relative">
+            <div className="relative w-full max-w-lg">
+              <img
+                src="/images/about_2.jpg"
+                alt="Careers"
+                className="rounded-lg shadow-xl w-full h-auto object-cover"
+              />
+              <div
+                className="absolute bottom-[-30px] left-5 right-5 bg-white text-[#FCBA06] shadow-lg rounded-lg py-4 px-6 max-w-md mx-auto text-center"
+                style={{ zIndex: 10 }}
+              >
+                <p className="font-bold text-lg md:text-xl">Our Core Pillars</p>
+                <p className="text-sm md:text-base text-black">
+                  We offer a dynamic and inclusive work environment that fosters
+                  growth, creativity, and innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Section with Cards */}
+          <div className="w-full lg:w-1/2 flex flex-col items-center space-y-6">
+            {/* Card 1 - Trust */}
+            <div className="w-full bg-white shadow-md rounded-lg p-6 flex items-center">
+              <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-[#FCBA06] text-white mr-4 rounded-full">
+                <FaHandsHelping className="text-2xl md:text-3xl" />
+              </div>
+              <div className="flex-1">
+                <p className="text-black text-sm md:text-base">
+                  <strong>Trust</strong> Our clients choose us for our transparency, commitment to
+                  promises, and consistent dedication to surpassing expectations.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 - Quality */}
+            <div className="w-full bg-white shadow-md rounded-lg p-6 flex items-center">
+              <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-[#FCBA06] text-white mr-4 rounded-full">
+                <FaStar className="text-2xl md:text-3xl" />
+              </div>
+              <div className="flex-1">
+                <p className="text-black text-sm md:text-base">
+                  <strong>Quality</strong> We achieve unmatched quality by adhering to the highest
+                  standards, utilizing skilled craftsmanship, and sourcing premium
+                  materials to deliver exceptional results.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3 - Service */}
+            <div className="w-full bg-white shadow-md rounded-lg p-6 flex items-center">
+              <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-[#FCBA06] text-white mr-4 rounded-full">
+                <FaUserCog className="text-2xl md:text-3xl " />
+              </div>
+              <div className="flex-1">
+                <p className="text-black text-sm md:text-base">
+                  <strong>Service</strong> We provide personalized, client-focused solutions, ensuring a
+                  smooth and timely project experience tailored to each unique vision.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    {/* Right Section with Cards */}
-    <div className="w-full lg:w-1/2 flex flex-col items-center space-y-6">
-      {/* Card 1 - Trust */}
-      <div className="w-full bg-white shadow-md rounded-lg p-6 flex items-center">
-        <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-[#FCBA06] text-white mr-4 rounded-full">
-          <FaHandsHelping className="text-2xl md:text-3xl" />
-        </div>
-        <div className="flex-1">
-          <p className="text-black text-sm md:text-base">
-            <strong>Trust</strong> Our clients choose us for our transparency, commitment to
-            promises, and consistent dedication to surpassing expectations.
-          </p>
-        </div>
-      </div>
-
-      {/* Card 2 - Quality */}
-      <div className="w-full bg-white shadow-md rounded-lg p-6 flex items-center">
-        <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-[#FCBA06] text-white mr-4 rounded-full">
-          <FaStar className="text-2xl md:text-3xl" />
-        </div>
-        <div className="flex-1">
-          <p className="text-black text-sm md:text-base">
-            <strong>Quality</strong> We achieve unmatched quality by adhering to the highest
-            standards, utilizing skilled craftsmanship, and sourcing premium
-            materials to deliver exceptional results.
-          </p>
-        </div>
-      </div>
-
-      {/* Card 3 - Service */}
-      <div className="w-full bg-white shadow-md rounded-lg p-6 flex items-center">
-        <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-[#FCBA06] text-white mr-4 rounded-full">
-          <FaUserCog className="text-2xl md:text-3xl " />
-        </div>
-        <div className="flex-1">
-          <p className="text-black text-sm md:text-base">
-            <strong>Service</strong> We provide personalized, client-focused solutions, ensuring a
-            smooth and timely project experience tailored to each unique vision.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
     </>
   );
