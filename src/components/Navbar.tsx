@@ -82,11 +82,11 @@ export default function Header() {
                   >
                     {route.name}
                     <span
-                      className={`absolute bottom-0 left-0 h-0.5 bg-white transition-all duration-300 ease-in-out ${
+                      className={`absolute bottom-0 left-0 h-0.5 bg-[#c38e24] transition-all duration-300 ease-in-out ${
                         pathname === route.href ? "w-full" : "w-0"
                       }`}
                     ></span>
-                    <span className="absolute bottom-0 left-0 h-0.5 bg-white w-0 group-hover:w-full transition-all duration-500 ease-out"></span>
+                    <span className="absolute bottom-0 left-0 h-0.5 bg-[#c38e24] w-0 group-hover:w-full transition-all duration-500 ease-out"></span>
                   </Link>
                 ))}
               </div>
